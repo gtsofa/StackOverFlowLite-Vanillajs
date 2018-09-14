@@ -1,5 +1,5 @@
 // Create user sign up
-document.getElementById('createUser').addEventListener('submit', createUser);
+document.getElementById('sign_up').addEventListener('submit', createUser);
 
 // create createUser function
 function createUser(){
