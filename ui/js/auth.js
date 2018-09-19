@@ -1,9 +1,8 @@
 
 // register a user
 let registerUser = document.getElementById('signupForm')
-if (registerUser){
-    registerUser.addEventListener('submit', signupForm);
-}
+
+registerUser.addEventListener('submit', signupForm);
 
 function signupForm(event){
     event.preventDefault();
@@ -47,9 +46,8 @@ function signupForm(event){
 
 // create user log in function
 let logUser = document.getElementById('loginUser')
-if (logUser){
-    logUser.addEventListener('submit', loginUser)
-}
+logUser.addEventListener('submit', loginUser)
+
 function loginUser(event){
     event.preventDefault();
     let username = document.getElementById('username').value;
