@@ -14,3 +14,39 @@ registerform.addEventListener('submit', function(event) {
         confirm_password:confirm_password
         
     };
+
+
+    // auth.js log in section 
+    // create user log in function
+let logUser = document.getElementById('loginUser')
+logUser.addEventListener('submit', loginUser)
+
+function loginUser(event){
+    event.preventDefault();
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+
+    // create a POST request on log in
+    fetch('http://127.0.0.1:5000/auth/login', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify({username:username, password:password})
+    })
+    .then((respon) => respon.json())
+    .then((data) => {
+        if (data.response === 'Login successfully'){
+            // redirect to  questions page
+            window.localStorage.setItem('token', data.token);
+            window.location.href = 'questions.html';
+        }
+        // undefined give warning
+        if (data.response == undefined){
+            document.getElementById('results').style.color = 'red'
+            document.getElementById('results').innerHTML = data.response
+        }
+    })
+
+}
