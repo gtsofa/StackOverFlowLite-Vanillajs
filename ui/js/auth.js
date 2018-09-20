@@ -29,4 +29,37 @@ let registerUser = document.getElementById('signupForm')
 
 registerUser.addEventListener('submit', signupForm);
 
+// log in a registered user
+function loginUser(event){
+    event.preventDefault();
+
+    // create a POST request on log in
+    let prefixUrl = 'http://127.0.0.1:5000/api/v2';
+    fetch(`${prefixUrl}/auth/login`, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify({
+            username: document.getElementById('username').value,
+            password: document.getElementById('password').value
+        })
+    })
+    .then(data => data.json())
+    .then(data => {
+        if (data){
+            redirect: window.location.replace("questions.html")
+        }
+        else{
+            alert("Invalid email or password")
+        }
+    })
+    .catch(error => console.error('Error', error))
+
+}
+
+let logUser = document.getElementById('loginUser')
+logUser.addEventListener('submit', loginUser)
+
 
