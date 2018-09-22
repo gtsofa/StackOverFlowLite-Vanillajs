@@ -10,7 +10,7 @@ function postQuestion(event){
 
     // c9 http://play3-maestrogtsofa.c9users.io:8080/api/v2
     // locally http://127.0.0.1:5000/api/v2
-
+    
     // POST request
     fetch('http://127.0.0.1:5000/api/v2/questions', {
         method: 'POST',
@@ -27,7 +27,7 @@ function postQuestion(event){
 
     })
     .then(data => data.json())
-    .then(data => {console.log(data)})
+    .then(response => {console.log(response)})
     .catch(error => console.error('Error', error))
 
 
