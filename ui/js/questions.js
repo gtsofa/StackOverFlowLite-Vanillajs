@@ -4,37 +4,31 @@ question.addEventListener('submit', postQuestion);
 
 function postQuestion(event){
     event.preventDefault();
-
-    let questiontitle = document.getElementById('questiontitle').value;
-    let question_desc = document.getElementById('question_desc')
     let token = window.localStorage.getItem('token');
 
+    
+
+    // c9 http://play3-maestrogtsofa.c9users.io:8080/api/v2
+    // locally http://127.0.0.1:5000/api/v2
+
     // POST request
-    fetch('http://127.0.0.1:5000/questions', {
+    fetch('http://127.0.0.1:5000/api/v2/questions', {
         method: 'POST',
         headers: {
             'Accept': 'application/json, text/plain, */*',
             'Content-type': 'application/json',
-            'token': token
+            'x-access-token': token
         },
         body: JSON.stringify({
-            questiontitle:questiontitle,
-            question_desc:question_desc
+            question_title: document.getElementById('questiontitle').value,
+            question_desc: document.getElementById('questiondesc').value
         })
-        .then((respon) => respon.json())
-        .then((data) => {
-            if(data.response === 'Question successfully posted'){
-                document.getElementById('results').style.color = 'green'
-                document.getElementById('results').innerHTML = data.response
-            }
-            if(data.response == undefined){
-                document.getElementById('results').style.color = 'red'
-                document.getElementById('results').innerHTML = data.response
-                
-            }
-        })
+        
 
     })
+    .then(data => data.json())
+    .then(data => {console.log(data)})
+    .catch(error => console.error('Error', error))
 
 
 }

@@ -3,10 +3,11 @@
 function signupForm(event){
     event.preventDefault();
 
-    let prefixUrl = 'http://127.0.0.1:5000/api/v2';
+    // let prefixUrl = 'http://play3-maestrogtsofa.c9users.io:8080/api/v2';
+    // local http://127.0.0.1:5000/api/v2
 
     // Create a POST request
-    fetch(`${prefixUrl}/auth/register`, {
+    fetch('http://127.0.0.1:5000/api/v2/auth/register', {
         method: 'POST',
         headers: {
             "Access-Control-Allow-Origin": "*",
@@ -34,6 +35,8 @@ function loginUser(event){
     event.preventDefault();
 
     // create a POST request on log in
+    // c9: http://play3-maestrogtsofa.c9users.io:8080/api/v2
+    // local : http://127.0.0.1:5000/api/v2
     let prefixUrl = 'http://127.0.0.1:5000/api/v2';
     fetch(`${prefixUrl}/auth/login`, {
         method: 'POST',
@@ -49,7 +52,10 @@ function loginUser(event){
     .then(data => data.json())
     .then(data => {
         if (data){
-            redirect: window.location.replace("questions.html")
+            token = data.token
+            localStorage.setItem('token', token)
+            console.log(localStorage.getItem('token'))
+            redirect: window.location.replace("../questions/questions.html")
         }
         else{
             alert("Invalid email or password")
