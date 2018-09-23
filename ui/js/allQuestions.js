@@ -44,5 +44,4 @@ function getAllQuestions(event){
 
 }
 
-// document.getElementById('button').addEventListener('click', getAllQuestions);
 document.getElementById('getAllQuestions').addEventListener('click', getAllQuestions);
