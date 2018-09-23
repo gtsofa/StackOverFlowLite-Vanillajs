@@ -27,8 +27,12 @@ function postQuestion(event){
 
     })
     .then(data => data.json())
-    .then(response => {console.log(response)})
+    .then(response => {
+        console.log(response)
+        redirect: window.location.replace("../questions/questions.html")
+    })
     .catch(error => console.error('Error', error))
 
 
 }
+
