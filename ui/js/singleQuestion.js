@@ -21,23 +21,9 @@ function getSingleQuestion(event) {
     })
     .then(res => res.json())
     .then(data => {
-        // let result = ``;
-        // // const { question_title, question_desc, date_created, user_id } = data.question;
-        // const question = data.question;
-        // const { question_title, question_desc, date_created, user_id } = question;
-        // `<table>
-        //     <tr>
-        //         <td>
-        //             <h3>${question_title}</h3>
-        //             <p>${question_desc}</p>
-        //         </td>
-        //     </tr>
-        // </table>`
-        // document.getElementById('result').innerHTML = result;
-        
 
         console.log(data);
-
+        
     })
     .catch(error => console.log('Error', error))
 }
