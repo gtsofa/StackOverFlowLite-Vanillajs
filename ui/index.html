@@ -9,7 +9,7 @@
     
     
 </head>
-<body>
+<body onload="getAllQuestions(event)">
     
     <div class="navbar">
         <div class="inner-navbar">
@@ -43,7 +43,10 @@
     
     <div class="middle-container">
         <h3 style="text-align:center;">Top Questions</h3>
-        <table>
+        <p id="result"></p>
+        <p id="getAllQuestions"></p>
+        <!-- <button id="getAllQuestions"></button> -->
+        <!-- <table>
   <tr>
     <td>
         <h3><a href="question_answer.html">Climbing a mountain is so scary, how do people these people from watamu are crazy?</a></h3>
@@ -94,7 +97,7 @@
     <td>0 answers</td>
     <td>0 votes</td>
   </tr>
-</table>
+</table> -->
     </div>
     </div>
 
@@ -105,7 +108,7 @@
         <p>Stackoverflowlite &copy; 2018</p>
 
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
     
 </body>
 </html>

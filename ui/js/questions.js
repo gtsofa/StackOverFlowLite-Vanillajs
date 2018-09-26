@@ -6,8 +6,6 @@ function postQuestion(event){
     event.preventDefault();
     let token = window.localStorage.getItem('token');
 
-    
-
     // c9 http://play3-maestrogtsofa.c9users.io:8080/api/v2
     // locally http://127.0.0.1:5000/api/v2
     
