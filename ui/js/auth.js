@@ -21,8 +21,16 @@ function signupForm(event){
 
         })
     })
-    .then(data => data.json())
-    .then(data => {console.log(data)})
+    .then(respo => respo.json())
+    .then((data) => {
+        console.log(data)
+        if (data['message'] == 'User registered successfully'){
+            //redirect
+            document.location.href='../index.html'
+        } else if (data['errors']){
+            document.getElementById('result').innerHTML = data['errors'];
+        }
+    })
     .catch(error => console.error('Error:', error))
 }
 

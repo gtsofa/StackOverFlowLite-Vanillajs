@@ -7,7 +7,7 @@ function getAllQuestions(event){
     // locally http://127.0.0.1:5000/api/v2
 
     // Get all questions request
-    fetch('http://play3-maestrogtsofa.c9users.io:8080/api/v2/questions', {
+    fetch('http://127.0.0.1:5000/api/v2/questions', {
         method: 'GET',
         headers: {
             'Accept': 'application/json, text/plain, */*',

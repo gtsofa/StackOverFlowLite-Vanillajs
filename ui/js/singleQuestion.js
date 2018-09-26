@@ -23,6 +23,7 @@ function getSingleQuestion(event) {
     .then((data) => {
 
         console.log(data);
+        document.getElementById('result').innerHTML = data;
         
     })
     .catch(error => console.log('Error', error))
