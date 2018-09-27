@@ -20,12 +20,12 @@ function getAllQuestions(event){
 
         let result = ``;
             data.questions.forEach((question) => {
-                const {question_title, date_created, user_id } = question;
+                const {question_title, date_created, question_id, user_id } = question;
                 result += 
                     `<table>
                         <tr>
                             <td>
-                                <h3><a href="#">${question_title}</a></h3>
+                                <h3><a class="question-class" href="#" data-id=${question_id}>${question_title}</a></h3>
                             </td>
                             <td>${date_created}</td>
                             <td>${user_id}</td>
@@ -44,3 +44,13 @@ function getAllQuestions(event){
 
 // document.getElementById('button').addEventListener('click', getAllQuestions);
 document.getElementById('getAllQuestions').addEventListener('click', getAllQuestions);
+
+window.onclick = event => {
+
+    if (event.target.getAttribute("class") == "question-class"){
+        window.localStorage.setItem("question_id", event.target.getAttribute("data-id"))
+        redirect: window.location.replace("/ui/questions/single_question.html")
+    } else {
+        return false
+    }
+}

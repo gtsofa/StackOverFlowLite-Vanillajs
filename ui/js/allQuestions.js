@@ -22,12 +22,12 @@ function getAllQuestions(event){
 
         let result = `<h1> All Questions </h1>`;
             data.questions.forEach((question) => {
-                const {question_title, date_created, user_id } = question;
+                const {question_title, date_created, question_id, user_id } = question;
                 result += 
                     `<table>
                         <tr>
                             <td>
-                                <h3><a href="#">${question_title}</a></h3>
+                                <h3><a href="#" data-id=${question_id}>${question_title}</a></h3>
                             </td>
                             <td>${date_created}</td>
                             <td>${user_id}</td>
