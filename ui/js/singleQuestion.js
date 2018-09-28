@@ -1,12 +1,5 @@
 // get a single question
 
-// let questionId = document.getElementById('getSingleQuestion')
-// questionId.addEventListener('click', getSingleQuestion);
-
-
-// questionId.addEventListener('click', getSingleQuestion);
-
-
 function getSingleQuestion(event) {
     event.preventDefault();
     // c9 http://play3-maestrogtsofa.c9users.io:8080/api/v2
@@ -35,11 +28,14 @@ function getSingleQuestion(event) {
             <input>
         </div> -->
         <p>${data.question_desc}</p>
+            <button class="votes" id="upvote">&#8593; upvote</button>
+            <button class="votes" id="downvote">&#8595; downvote</button>
+            <button class="votes" id="deletequestion">&#10008; delete</button>
+        <p>Posted on ${data.date_created} by <a href="#">${data.user_id}</a></p>
     </td>
   </tr>
   <tr>
-        <td class="answer" style="color:#3498db;"><b>1</b> <emp>answers</emp></td>
-        <td style="font-size:12px; color:#3498db;"><b>asked</b> <strong>19/08/2018</strong> </td> 
+        <td class="answer" style="color:#3498db;"><b>1</b> <emp>answer</emp></td> 
   </tr>
   <tr>
         <td>
@@ -47,21 +43,16 @@ function getSingleQuestion(event) {
                 <input>
             </div> -->
             <p>The fact remains loreps sim ret jst is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The fact remains loreps sim ret jst is a long established fact that goes home.</p>
+            
+            <button class="votes" id="updateanswer">&#9998; update answer</button>
+            <button class="votes" id="acceptanswer">&#10004; Accept Answer</button>
+            <p>Answered on ${data.date_created} by <a href="#">${data.user_id}</a></p>
+            <p class="answer" style="color:#3498db;"> <a href="#" id="comment">add a comment</a></p>
         </td>
       </tr>
-      <tr>
-            <td class="answer" style="color:#3498db;"> <a href="#">Improve this answer</a></td>
-            <td class="answer" style="color:#3498db;"> <a href="#">add a comment</a></td>
-            <td style="font-size:12px; color:#3498db;"><b>answered</b> <strong>21/08/2018</strong> </td> 
-      </tr>
-
-      
 </table>
         `
         document.getElementById('result').innerHTML = result;
-
-
-        
     })
     .catch(error => console.log('Error', error))
 }
