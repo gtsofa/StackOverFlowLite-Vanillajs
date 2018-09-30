@@ -373,3 +373,9 @@ td.user-cell {
   height: 20%;
   width: 40%;
 }
+
+.answer-question {
+  
+  float: right;
+  margin: 15%;
+}
