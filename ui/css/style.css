@@ -355,3 +355,21 @@ ul.question-stats {
     margin-left: -3px;
     /*top: 0;*/
 }
+
+/* users profile section */
+td.user-cell:hover{
+  background-color: #dadfea;
+  color: #6a737c;
+
+}
+
+img {
+  width:100px;
+  height:100px;
+  background: url(../img/lady.png) no-repeat scroll 0 0;
+}
+
+td.user-cell {
+  height: 20%;
+  width: 40%;
+}

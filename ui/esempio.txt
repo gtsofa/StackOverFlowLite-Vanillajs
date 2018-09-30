@@ -99,3 +99,288 @@ The route to home is very hard to find and I was wondering if by posting here I 
   </tr>
 </table>
 // endof table here
+
+
+================================users.html==============
+<div class="navbar">
+        <div class="inner-navbar">
+        <ul>
+            <li style="float:left"><a href="../index.html" >StackOverFlowLite</a></li>
+            <input type="text" placeholder="Search...">
+            <li><a href="log_in.html">Log In</a></li>
+            <li><a href="sign_up.html">Sign Up</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="main-container">
+            <div class="containerleft">
+                    <button class="ask-question"><a href="ask_question.html">Ask A Question</a></button>
+                    <table>
+                        <tr>
+                            <td><a href="questions.html">Questions</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="tags.html">Tags</a></td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td><a href="questions.html">Users</a></td>
+                        </tr>
+                    </table>
+                </div>
+    <div class="containerleft">
+        <div class="grid-layout">
+            <h3>Users profile</h3>
+            <p>The user profile for every registered member</p>
+            <div class="user-cell">
+                <a href="maestro_profile.html">Maestro Tsofa</a>
+                <p>Watamu, Nairobi</p>
+                <p>001</p>
+                <p>firebase, firebase-database, android</p>
+            </div>
+            <div class="user-cell">
+                    <a href="davide_profile.html">Davide Bianco</a>
+                    <p>Vatican, Roma</p>
+                    <p>039</p>
+                    <p>React JS, Mysql-database, Go</p>
+                </div>
+                <div class="user-cell">
+                        <a href="cantante_profile.html">Cantante Di Monte</a>
+                        <p>Garden City, Nairobi</p>
+                        <p>004</p>
+                        <p>python, postgres-database, flask</p>
+                    </div>
+                    <div class="user-cell">
+                            <a href="francorosso_profile.html">Franco Rosso</a>
+                            <p>Taraka, Nithi</p>
+                            <p>075</p>
+                            <p>java, mongo-database, c#</p>
+                        </div>
+        </div>
+    </div>
+    <!-- end of containerleft-->
+    
+    <div class="middle-container">
+        <div class="grid-layout">
+            <div class="user-cell">
+                <a href="maestro_profile.html">Maestro Tsofa</a>
+                <p>Watamu, Nairobi</p>
+                <p>001</p>
+                <p>firebase, firebase-database, android</p>
+            </div>
+            <div class="user-cell">
+                    <a href="davide_profile.html">Davide Bianco</a>
+                    <p>Vatican, Roma</p>
+                    <p>039</p>
+                    <p>React JS, Mysql-database, Go</p>
+                </div>
+                <div class="user-cell">
+                        <a href="cantante_profile.html">Cantante Di Monte</a>
+                        <p>Garden City, Nairobi</p>
+                        <p>004</p>
+                        <p>python, postgres-database, flask</p>
+                    </div>
+                    <div class="user-cell">
+                            <a href="francorosso_profile.html">Franco Rosso</a>
+                            <p>Taraka, Nithi</p>
+                            <p>075</p>
+                            <p>java, mongo-database, c#</p>
+                        </div>
+        </div>
+    </div>
+    </div>
+    ==================================end users.html=====================
+
+    ===============nicely formatted users.html ======================
+    <table>
+                        <tr>
+                                <td><h3>Users profile</h3></td>
+                        </tr>
+                        <tr>
+                                <td class="user-cell">
+                                        <img src="../img/man1.jpeg">
+                                        <p><a href="maestro_profile.html">Maestro Tsofa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="iOS.html">iOS</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                        </tr>    
+                        <tr>
+                                <td class="user-cell">
+                                        <img src="../img/man1.jpeg">
+                                        <p><a href="maestro_profile.html">Maestro Tsofa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="user-cell">
+                                        <img src="../img/man1.jpeg">
+                                        <p><a href="maestro_profile.html">Maestro Tsofa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="user-cell">
+                                        <img src="../img/man1.jpeg">
+                                        <p><a href="maestro_profile.html">Maestro Tsofa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="user-cell">
+                                        <img src="../img/man1.jpeg">
+                                        <p><a href="maestro_profile.html">Maestro Tsofa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                                <td class="user-cell">
+                                        <img src="../img/lady.png">
+                                        <p><a href="maestro_profile.html">Bellacosa</a></p>
+                                        <p>Watamu, Nairobi</p>
+                                        <p>001</p>
+                                        <p><a href="firebase.html">firebase</a> | <a href="linux.html">Linux</a> | <a href="window.html">Windows</a></p>
+                                </td>
+                        </tr>
+                          </table>
+                          =======================this users.html talbe====================
+
+
+============================================== single_users.j==================================
+// get single user profile
+
+function getSingleUser(event){
+    event.preventDefault();
+
+    // c9 http://play3-maestrogtsofa.c9users.io:8080/api/v2
+    // locally http://127.0.0.1:5000/api/v2
+
+    let token = window.localStorage.getItem('token')
+    // let username = window.localStorage.getItem('user_id')
+
+    // GET single user profile request
+    fetch('http://127.0.0.1:5000/api/v2/my-questions' , {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-type': 'application/json',
+            'x-access-token': token
+        } 
+    })
+    .then(res => res.json())
+    .then((data) => {
+
+        console.log(data);
+        let result = ``
+        data.questions.forEach((question) =>{
+            const {question_title, date_created, question_id, user_id } = question;
+            // resultout = `<table>
+            // <tr>
+            // <td><img src="../img/man1.jpeg"></td>
+            //         <td class="user-bio">
+                            
+            //                 <p><b>name:</b>${user_id}</p>
+            //                 <p><b>Location:</b> Watamu</p>
+            //                 <p><b>Email:</b> ${data.email} username@email.com</p>
+            //                 </td>
+            //                 <td>
+            //                 <p>${Object.keys(question).length} <b>Questions</b></p>
+            //                 <p>10 Answers</p>
+            //                 </td>                        
+            // </tr>
+            // <tr>
+            //     <td><p><a href="most_answers.html">Most Answers</a> | <a href="recently_questions.html">Recently Questions</a></p></td>
+            // </tr>
+            // </table>`
+            // document.getElementById('resultout').innerHTML = resultout;
+            result +=
+        `
+        <table>
+            <tr>
+                <td>
+                <h3><a href="#">${question_title}</a></h3>
+                </td>
+                <td>1 Answers</td>
+                <td>0 Votes.</td>
+                <td><p>${date_created}</p></td>
+            </tr>
+        </table>
+        `
+        document.getElementById('result').innerHTML = result;
+
+    });
+
+    })
+    .catch(error => console.log('Error', error))
+}
+========================================end single_user.js=====================

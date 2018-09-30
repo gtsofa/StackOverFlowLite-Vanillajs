@@ -43,14 +43,16 @@ function getAllQuestions(event){
 }
 
 // document.getElementById('button').addEventListener('click', getAllQuestions);
-document.getElementById('getAllQuestions').addEventListener('click', getAllQuestions);
+// document.getElementById('getAllQuestions').addEventListener('click', getAllQuestions);
 
 window.onclick = event => {
-
-    if (event.target.getAttribute("class") == "question-class"){
-        window.localStorage.setItem("question_id", event.target.getAttribute("data-id"))
-        redirect: window.location.replace("/ui/questions/single_question.html")
-    } else {
-        return false
-    }
+    
+    // if (event.target.getAttribute("class") == "question-class"){
+    //     window.localStorage.setItem("question_id", event.target.getAttribute("data-id"))
+    //     redirect: window.location.replace("/ui/questions/single_question.html")
+    // } else {
+    //     return false
+    // }
+    window.localStorage.setItem("question_id", event.target.getAttribute("data-id"))
+    redirect: window.location.replace("/ui/questions/single_question.html")
 }
