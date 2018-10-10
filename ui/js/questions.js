@@ -1,6 +1,6 @@
 // post a question
-let question = document.getElementById('postQuestion')
-question.addEventListener('submit', postQuestion);
+// let question = document.getElementById('postQuestion')
+// question.addEventListener('submit', postQuestion);
 
 function postQuestion(event){
     event.preventDefault();

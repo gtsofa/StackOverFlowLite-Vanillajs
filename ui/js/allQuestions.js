@@ -20,7 +20,7 @@ function getAllQuestions(event){
     .then(res => res.json())
     .then((data) => {
 
-        let result = `<h1> All Questions </h1>`;
+        let result = ``;
             data.questions.forEach((question) => {
                 const {question_title, date_created, question_id, user_id } = question;
                 result += 
@@ -44,4 +44,4 @@ function getAllQuestions(event){
 
 }
 
-document.getElementById('getAllQuestions').addEventListener('click', getAllQuestions);
+// document.getElementById('getAllQuestions').addEventListener('click', getAllQuestions);

@@ -9,7 +9,7 @@
     
     
 </head>
-<body>
+<body onload="getAllQuestions(event)">
     
     <div class="navbar">
         <p id="postQuestion"></p>
@@ -29,13 +29,11 @@
             <tr>
                 <td><a href="questions.html">Questions</a></td>
             </tr>
-            <tr>
-                <td><a href="tags.html">Tags</a></td>
-            </tr>
+            
             <tr>
             </tr>
             <tr>
-                <td><a href="user_profile.html">Users</a></td>
+                <td><a href="../users/users.html">Users</a></td>
             </tr>
         </table>
     </div>
@@ -43,7 +41,7 @@
     <div class="middle-container">
         <h1 style="text-align:center;">All Questions</h1>
         <!-- table goes here-->
-        <button id="getAllQuestions">Get questions</button>
+        <!-- <button id="getAllQuestions">Get questions</button> -->
         <p id="result"></p>
     </div>
     </div>
