@@ -5,6 +5,7 @@ function getAllQuestions(event){
 
      // c9 http://play3-maestrogtsofa.c9users.io:8080/api/v2
     // locally http://127.0.0.1:5000/api/v2
+    let username = window.localStorage.getItem('username')
 
     // Get all questions request
     fetch('http://127.0.0.1:5000/api/v2/questions', {
@@ -26,10 +27,9 @@ function getAllQuestions(event){
                         <tr>
                             <td>
                                 <h3><a class="question-class" href="#" data-id=${question_id}>${question_title}</a></h3>
+                                <p>Posted on ${date_created} by ${username}</p>
+                                <p>1 answers | 0 votes</p>
                             </td>
-                            <td>${date_created}</td>
-                            <td>${user_id}</td>
-                            <td>3 answers 0 votes</td>
                         </tr>
                     </table>`
                     document.getElementById('result').innerHTML = result;
@@ -42,6 +42,8 @@ function getAllQuestions(event){
 
 }
 
+// document.getElementById('button').addEventListener('click', getAllQuestions);
+// document.getElementById('getAllQuestions').addEventListener('click', getAllQuestions);
 
 window.onclick = event => {
     

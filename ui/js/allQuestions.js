@@ -1,6 +1,4 @@
-// get all questions
-// let getallquestions = document.getElementById('que')
-// getallquestions.addEventListener('click', getallquestions)
+
 
 function getAllQuestions(event){
     event.preventDefault();

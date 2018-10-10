@@ -6,40 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
-    
-    
 </head>
-<body>
+<body onload="getSingleQuestion(event)">
+    
     <div class="navbar">
         <div class="inner-navbar">
         <ul>
             <li style="float:left"><a href="../index.html" >StackOverFlowLite</a></li>
             <input type="text" placeholder="Search...">
-            <li><a href="log_out.html">Log Out</a></li>
+            <li><a href="log_out.html">Log out</a></li>
         </ul>
         </div>
     </div>
-    
-    <div class="ask-question">
-        <form action="#" id="postQuestion">
-            <h2>Post a question</h2>
-            <input type="text" placeholder="Title" name="questiontitle" id="questiontitle" required><br>
-            <textarea rows="6" cols="60" name="questiondesc" id="questiondesc" placeholder="Enter description..."></textarea>
-            <div class="clearfix">
-            <button type="submit" >Submit</button>
-
-        </div>
-        </form>
-
+    <div class="main-container">
+    <div class="containerleft">
+        <table>
+            <tr>
+                    <button class="ask-question"><a href="ask_question.html">Ask Question</a></button>
+            </tr>
+            <tr>
+                <td><a href="../users/profile.html">Profile</a></td>
+            </tr>
+        </table>
     </div>
+    <!--middle container-->
+    <div class="middle-container">
+            <div id="result"></div>
     
+    <!-- end middle container -->
+    <div class="answer-question">
+    
+        </div>
+    </div>
+    </div>
     <div class="footer">
         <p>Learn. Share. Build</p>
         <p>Home. About. Contact</p>
         <p>Stackoverflowlite &copy; 2018</p>
 
     </div>
-    <script src="../js/questions.js"></script>
+    <script src="../js/mySingleQuestion.js"></script>
     
 </body>
 </html>

@@ -26,7 +26,7 @@ function signupForm(event){
         console.log(data)
         if (data['message'] == 'User registered successfully'){
             //redirect
-            document.location.href='../index.html'
+            document.location.href='../auth/log_in.html'
         } else if (data['errors']){
             document.getElementById('result').innerHTML = data['errors'];
         }
@@ -62,8 +62,9 @@ function loginUser(event){
         if (data){
             token = data.token
             localStorage.setItem('token', token)
+            localStorage.setItem('username', data.username)
             console.log(localStorage.getItem('token'))
-            redirect: window.location.replace("../questions/questions.html")
+            redirect: window.location.replace("../users/profile.html")
         }
         else{
             alert("Invalid email or password")

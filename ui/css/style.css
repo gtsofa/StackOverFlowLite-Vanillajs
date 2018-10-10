@@ -15,7 +15,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(241, 221, 221);
 }
 
 ul.votes {
@@ -205,7 +205,7 @@ button:hover {
 
 /*footer section*/
 .footer {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -378,4 +378,12 @@ td.user-cell {
   
   float: right;
   margin: 15%;
+}
+
+.crud-button {
+  width: 120px;
+    height: 60px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
 }

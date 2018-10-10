@@ -1,6 +1,6 @@
 // post a question
-// let question = document.getElementById('postQuestion')
-// question.addEventListener('submit', postQuestion);
+let question = document.getElementById('postQuestion')
+question.addEventListener('submit', postQuestion);
 
 function postQuestion(event){
     event.preventDefault();
@@ -27,7 +27,7 @@ function postQuestion(event){
     .then(data => data.json())
     .then(response => {
         console.log(response)
-        redirect: window.location.replace("../questions/questions.html")
+        redirect: window.location.replace("../users/profile.html")
     })
     .catch(error => console.error('Error', error))
 

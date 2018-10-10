@@ -9,28 +9,26 @@
     
     
 </head>
-<body>
+<body onload="getSingleUser(event)">
     <div class="navbar">
         <div class="inner-navbar">
         <ul>
             <li style="float:left"><a href="../index.html" >StackOverFlowLite</a></li>
             <input type="text" placeholder="Search...">
-            <li><a href="log_out.html">Log Out</a></li>
+            <li><a href="../log_out.html">Log out</a></li>
         </ul>
         </div>
     </div>
-    
-    <div class="ask-question">
-        <form action="#" id="postQuestion">
-            <h2>Post a question</h2>
-            <input type="text" placeholder="Title" name="questiontitle" id="questiontitle" required><br>
-            <textarea rows="6" cols="60" name="questiondesc" id="questiondesc" placeholder="Enter description..."></textarea>
-            <div class="clearfix">
-            <button type="submit" >Submit</button>
-
-        </div>
-        </form>
-
+    <div class="user-table">
+        
+        <!-- <div id="resultout"></div> -->
+        <div id="result"></div>
+        <!-- <div onload="mySingleQuestion"></div> -->
+        <div id="getMySingleQuestion"></div>
+        
+        
+        
+    </div>
     </div>
     
     <div class="footer">
@@ -39,7 +37,8 @@
         <p>Stackoverflowlite &copy; 2018</p>
 
     </div>
-    <script src="../js/questions.js"></script>
+    <script src="../js/singleUser.js"></script>
+    <script src="../js/mySingleQuestion.js"></script>
     
 </body>
 </html>
